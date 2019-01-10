@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Advice {{data.LACount}}</h2>
+
+<mat-dialog-content *ngIf="data.LACount == 1">
+  Advice blah blah blah {{data.LACount}}
+</mat-dialog-content>
+<mat-dialog-content *ngIf="data.LACount == 2">
+  Advice blah blah blah {{data.LACount}}
+</mat-dialog-content>
+<mat-dialog-content *ngIf="data.LACount == 3">
+  Advice blah blah blah {{data.LACount}}
+</mat-dialog-content>
+<mat-dialog-content *ngIf="data.LACount == 4">
+  Advice blah blah blah {{data.LACount}}
+</mat-dialog-content>
+<mat-dialog-content *ngIf="data.LACount == 5">
+  Advice blah blah blah {{data.LACount}}
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-raised-button (click)="okay()">Click me when done</button>
+</mat-dialog-actions>

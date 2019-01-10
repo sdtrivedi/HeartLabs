@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import * as Winwheel from 'winwheel';
 
+declare var _: any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'heartlab-interactive-games';
+
 }

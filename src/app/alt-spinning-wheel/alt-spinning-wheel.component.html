@@ -1,0 +1,178 @@
+<div class="row">
+  <div class="container">
+    <div class="row">
+      <div>
+          <h3 align = 'center'>Click the button below for us to suggest a random activity!</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-6">
+        <button type="button" class="btn btn-primary" (click) = "rndPicker()">Click me!</button>
+      </div>
+    </div>
+
+
+    <div *ngIf="one_on">
+        <div class="display">
+            <!-- <div class="segment A"></div> -->
+            <div class="segment B"></div>
+            <div class="segment C"></div>
+            <!-- <div class="segment D"></div> -->
+            <!-- <div class="segment E"></div> -->
+            <!-- <div class="segment F"></div> -->
+            <!-- <div class="segment G"></div> -->
+          </div>
+    </div>
+    <div *ngIf="two_on">
+        <div class="display">
+            <div class="segment A"></div>
+            <div class="segment B"></div>
+            <!-- <div class="segment C"></div> -->
+            <div class="segment D"></div>
+            <div class="segment E"></div>
+            <!-- <div class="segment F"></div> -->
+            <div class="segment G"></div>
+          </div>
+    </div>
+    <div *ngIf="three_on">
+        <div class="display">
+            <div class="segment A"></div>
+            <div class="segment B"></div>
+            <div class="segment C"></div>
+            <div class="segment D"></div>
+            <!-- <div class="segment E"></div> -->
+            <!-- <div class="segment F"></div> -->
+            <div class="segment G"></div>
+          </div>
+    </div>
+    <div *ngIf="four_on">
+        <div class="display">
+            <!-- <div class="segment A"></div> -->
+            <div class="segment B"></div>
+            <div class="segment C"></div>
+            <!-- <div class="segment D"></div> -->
+            <!-- <div class="segment E"></div> -->
+            <div class="segment F"></div>
+            <div class="segment G"></div>
+          </div>
+    </div>
+    <div *ngIf="five_on">
+        <div class="display">
+            <div class="segment A"></div>
+            <!-- <div class="segment B"></div> -->
+            <div class="segment C"></div>
+            <div class="segment D"></div>
+            <!-- <div class="segment E"></div> -->
+            <div class="segment F"></div>
+            <div class="segment G"></div>
+          </div>
+    </div>
+    <div *ngIf="six_on">
+        <div class="display">
+            <div class="segment A"></div>
+            <!-- <div class="segment B"></div> -->
+            <div class="segment C"></div>
+            <div class="segment D"></div>
+            <div class="segment E"></div>
+            <div class="segment F"></div>
+            <div class="segment G"></div>
+          </div>
+    </div>
+    <div *ngIf="seven_on">
+        <div class="display">
+            <div class="segment A"></div>
+            <div class="segment B"></div>
+            <div class="segment C"></div>
+            <!-- <div class="segment D"></div> -->
+            <!-- <div class="segment E"></div> -->
+            <!-- <div class="segment F"></div> -->
+            <!-- <div class="segment G"></div> -->
+          </div>
+    </div>
+    <div *ngIf="eight_on">
+        <div class="display">
+            <div class="segment A"></div>
+            <div class="segment B"></div>
+            <div class="segment C"></div>
+            <div class="segment D"></div>
+            <div class="segment E"></div>
+            <div class="segment F"></div>
+            <div class="segment G"></div>
+          </div>
+    </div>
+    <div *ngIf="nine_on">
+        <div class="display">
+            <div class="segment A"></div>
+            <div class="segment B"></div>
+            <div class="segment C"></div>
+            <div class="segment D"></div>
+            <!-- <div class="segment E"></div> -->
+            <div class="segment F"></div>
+            <div class="segment G"></div>
+          </div>
+    </div>
+
+    <div>
+      <ol>
+        <li><div class="row">
+          <div class="col-md-6">Have a picnic</div>
+          <div class="col-md-6" *ngIf="one_on">
+              <button class="btn btn-primary m-3" (click)="openInstructionsDialog()"> Instructions</button>
+          </div>
+        </div></li>
+        <li><div class="row">
+          <div class="col-md-6">Visit Planetarium</div>
+          <div class="col-md-6" *ngIf="two_on">
+            <button class="btn btn-primary m-3" (click)="openInstructionsDialog()">Instructions</button>
+          </div>
+        </div></li>
+        <li><div class="row">
+          <div class="col-md-6">Go Hiking</div>
+          <div class="col-md-6" *ngIf="three_on">
+            <button class="btn btn-primary m-3" (click)="openInstructionsDialog()">Instructions</button>
+          </div>
+        </div></li>
+        <li><div class="row">
+          <div class="col-md-6">Sunset Walk</div>
+          <div class="col-md-6" *ngIf="four_on">
+            <button class="btn btn-primary m-3" (click)="openInstructionsDialog()">Instructions</button>
+          </div>
+        </div></li>
+        <li><div class="row">
+          <div class="col-md-6">Try a new Restaurant</div>
+          <div class="col-md-6" *ngIf="five_on">
+            <button class="btn btn-primary m-3" (click)="openInstructionsDialog()">Instructions</button>
+          </div>
+        </div></li>
+        <li><div class="row">
+          <div class="col-md-6">Cook a home cooked meal</div>
+          <div class="col-md-6" *ngIf="six_on">
+            <button class="btn btn-primary m-3" (click)="openInstructionsDialog()">Instructions</button>
+          </div>
+        </div></li>
+        <li><div class="row">
+          <div class="col-md-6">Go mini golfing</div>
+          <div class="col-md-6" *ngIf="seven_on">
+            <button class="btn btn-primary m-3" (click)="openInstructionsDialog()">Instructions</button>
+          </div>
+        </div></li>
+        <li><div class="row">
+          <div class="col-md-6">Have a board game night</div>
+          <div class="col-md-6" *ngIf="eight_on">
+            <button class="btn btn-primary m-3" (click)="openInstructionsDialog()">Instructions</button>
+          </div>
+        </div></li>
+        <li><div class="row">
+          <div class="col-md-6">Win the most tickets at an arcade</div>
+          <div class="col-md-6" *ngIf="nine_on">
+            <button class="btn btn-primary m-3" (click)="openInstructionsDialog()">Instructions</button>
+          </div>
+        </div></li>
+        <!-- <li><div>Visit a museum</div></li>
+        <li><div>Go ice skating</div></li>
+        <li><div>Go rock climbing</div></li> -->
+      </ol>
+
+    </div>
+  </div>
+</div>

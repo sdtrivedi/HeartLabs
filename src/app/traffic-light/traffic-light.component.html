@@ -1,0 +1,66 @@
+<!-- <div class="row">
+  <p>Please select a zone that accurately describes how angry you feel right now</p>
+</div>
+<div class="row">
+  <div class="container">
+      <button mat-raised-button class="btn btn-danger btn-lg btn-block" (click)="ToggleRedZone()" #anchor>{{text}}</button>
+      <button mat-rasied-button class="btn btn-warning btn-lg btn-block">Little angry</button>
+      <button mat-rasied-button class="btn btn-success btn-lg btn-block">Calm</button>
+
+  </div> -->
+  <!-- <kendo-popup [anchor]="anchor" (anchorViewportLeave)="show = false" *ngIf="show && count == 1">
+      <div class='content'> -->
+          <!-- User-defined content -->
+          <!-- Adivse 1 for very angry.
+      </div>
+  </kendo-popup>
+  <kendo-popup [anchor]="anchor" (anchorViewportLeave)="show = false" *ngIf="show && count == 2">
+      <div class='content'> -->
+          <!-- User-defined content -->
+          <!-- Adivse 2 for very angry.
+      </div>
+  </kendo-popup>
+  <kendo-popup [anchor]="anchor" (anchorViewportLeave)="show = false" *ngIf="show && count == 3">
+      <div class='content'> -->
+          <!-- User-defined content -->
+          <!-- Adivse 3 for very angry.
+      </div>
+  </kendo-popup>
+  <kendo-popup [anchor]="anchor" (anchorViewportLeave)="show = false" *ngIf="show && count == 4">
+      <div class='content'> -->
+          <!-- User-defined content -->
+          <!-- Adivse 4 for very angry.
+      </div>
+  </kendo-popup>
+  <kendo-popup [anchor]="anchor" (anchorViewportLeave)="show = false" *ngIf="show && count == 5">
+      <div class='content'> -->
+          <!-- User-defined content -->
+          <!-- Adivse 5 for very angry.
+      </div>
+  </kendo-popup>
+  <kendo-popup [anchor]="anchor" (anchorViewportLeave)="show = false" *ngIf="show && count == 6">
+      <div class='content'> -->
+          <!-- User-defined content -->
+          <!-- Adivse 6 for very angry.
+      </div>
+  </kendo-popup> -->
+  <div class="row">
+    <p>{{stringVal}}</p>
+  </div>
+  <div class="row" *ngIf="show">
+    <div class="container">
+        <button mat-raised-button class="btn btn-danger btn-lg btn-block" (click)="openVAngryDialog()">Very Angry</button>
+        <button mat-rasied-button class="btn btn-warning btn-lg btn-block" (click)="openLAngryDialog()">Little angry</button>
+        <button mat-rasied-button class="btn btn-success btn-lg btn-block" (click)="openCalmDialog()">Calm</button>
+
+    </div>
+
+</div>
+
+<div class="row" *ngIf="!show">
+  <div class="container">
+      <app-home></app-home>
+
+  </div>
+
+</div>
